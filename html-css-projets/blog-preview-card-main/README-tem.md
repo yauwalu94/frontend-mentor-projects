@@ -83,8 +83,8 @@ During this project, I focused on **clean layout and spacing**. Key takeaways:
   border-radius: 10px;
 }
 ```
-- Used Flexbox to align the avatar and author name inline with proper spacing:
-```
+- Used Flexbox to align the avatar and author name inline with proper spacing
+```css
 .card_avatar {
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ During this project, I focused on **clean layout and spacing**. Key takeaways:
 
 - Google Fonts: Figtree ([Used for typography](https://fonts.google.com/specimen/Figtree))
 
-– Helped with avatar alignment ([Helped with avatar alignment](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
+- Helped with avatar alignment ([Helped with avatar alignment](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
 
 
 # Author
@@ -115,7 +115,7 @@ During this project, I focused on **clean layout and spacing**. Key takeaways:
     GitHub: @yauwalu84
     LinkedIn: Yahaya Auwalu
 
-#Acknowledgments
+# Acknowledgments
 
    - Frontend Mentor for providing the challenge and design files.
    - Myself for experimenting with responsive design, Flexbox, and proper spacing.
