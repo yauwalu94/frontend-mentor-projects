@@ -1,93 +1,121 @@
-# Frontend Mentor - Blog preview card
+# Frontend Mentor - Blog Preview Card
 
-![Design preview for the Blog preview card coding challenge](./preview.jpg)
+This is my solution to the [Blog Preview Card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). This project helped me practice **HTML, CSS, Flexbox, and responsive design** using a real-world card layout.
 
-## Welcome! 👋
+---
 
-Thanks for checking out this front-end coding challenge.
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)  
+  - [The challenge](#the-challenge)  
+  - [Screenshot](#screenshot)  
+  - [Links](#links)  
+- [My process](#my-process)  
+  - [Built with](#built-with)  
+  - [What I learned](#what-i-learned)  
+  - [Continued development](#continued-development)  
+  - [Useful resources](#useful-resources)  
+- [Author](#author)  
+- [Acknowledgments](#acknowledgments)  
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+---
 
-## The challenge
+## Overview
 
-Your challenge is to build out this blog preview card and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Build a **blog preview card** that is visually close to the design. Users should be able to:
 
-Your users should be able to:
+- See hover and focus states for all interactive elements (links, buttons).  
+- Experience a responsive layout for **mobile-first design**.  
 
-- See hover and focus states for all interactive elements on the page
+The card includes:  
+- Article image  
+- Badge (category)  
+- Published date  
+- Title with hover/focus effect  
+- Short description  
+- Author avatar + name  
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+---
 
-## Where to find everything
+### Screenshot
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+![Screenshot of the Blog Preview Card](./preview.jpg) 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+---
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Links
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+- Solution URL: [GitHub Repository](https://github.com/yauwalu94/frontend-mentor-projects/tree/main/html-css-projets/blog-preview-card-main)  
+- Live Site URL: [Deployed Project](https://blog-preview-card-htmlcss.netlify.app/)  
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+---
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5  
+- CSS custom properties  
+- Flexbox  
+- Mobile-first workflow  
+- Responsive layout  
+- Google Fonts: [Figtree](https://fonts.google.com/specimen/Figtree)  
 
-## Deploying your project
+---
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### What I learned
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+During this project, I focused on **clean layout and spacing**. Key takeaways:
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- **Image wrapper** to control left/right spacing while keeping the image responsive:
 
-## Create a custom `README.md`
+```css
+.card_img_wrapper {
+  padding: 20px;
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+.card_img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+```
+- Used Flexbox to align the avatar and author name inline with proper spacing
+```css
+.card_avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+```
+- Implemented hover and focus-visible states for links to improve accessibility.
+- Practiced mobile-first design with a card that scales on different screen sizes.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## Continued development
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Learn to refactor the card into a reusable component in React or another framework.
+- Add micro-interactions like subtle hover effects on the card itself.
+- Experiment with CSS Grid to create more complex layouts for multiple cards.
 
-## Submitting your solution
+## Useful resources
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- Frontend Mentor Blog Preview Card Challenge([Official challenge.](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS))
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- Google Fonts: Figtree ([Used for typography](https://fonts.google.com/specimen/Figtree))
 
-## Sharing your solution
+- Helped with avatar alignment ([Helped with avatar alignment](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
 
-There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+# Author
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+    Name: Yahaya Auwalu
+    GitHub: @yauwalu84
+    LinkedIn: Yahaya Auwalu
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+# Acknowledgments
 
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+   - Frontend Mentor for providing the challenge and design files.
+   - Myself for experimenting with responsive design, Flexbox, and proper spacing.
